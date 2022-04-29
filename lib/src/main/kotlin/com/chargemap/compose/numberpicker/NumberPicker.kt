@@ -25,7 +25,7 @@ fun NumberPicker(
         value = value,
         onValueChange = onValueChange,
         dividersColor = dividersColor,
-        list = range.toList(),
+        items = range.toList(),
         textStyle = textStyle
     )
 }

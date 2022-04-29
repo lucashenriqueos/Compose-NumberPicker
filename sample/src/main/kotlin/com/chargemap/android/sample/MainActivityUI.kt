@@ -54,7 +54,7 @@ private fun NumberPicker() {
     var state by remember { mutableStateOf(0) }
     NumberPicker(
         value = state,
-        range = 0..10,
+        range = 0..59,
         onValueChange = {
             state = it
         }
@@ -182,7 +182,7 @@ private fun DoublesPicker() {
         label = { it.toString() },
         value = state,
         onValueChange = { state = it },
-        list = possibleValues
+        items = possibleValues
     )
 }
 
@@ -194,7 +194,7 @@ private fun FruitPicker() {
         label = { it },
         value = state,
         onValueChange = { state = it },
-        list = possibleValues
+        items = possibleValues
     )
 }
 
@@ -206,6 +206,6 @@ private fun IntRangePicker() {
         label = { it.toString() },
         value = value,
         onValueChange = { value = it },
-        list = possibleValues
+        items = possibleValues
     )
 }

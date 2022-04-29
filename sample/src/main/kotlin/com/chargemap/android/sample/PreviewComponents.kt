@@ -158,7 +158,7 @@ private fun DoublesPickerPreview() {
         label = { it.toString() },
         value = state,
         onValueChange = { state = it },
-        list = possibleValues,
+        items = possibleValues,
         textStyle = TextStyle(Color.White)
     )
 }
@@ -172,7 +172,7 @@ private fun FruitPickerPreview() {
         label = { it },
         value = state,
         onValueChange = { state = it },
-        list = possibleValues
+        items = possibleValues
     )
 }
 
@@ -185,7 +185,7 @@ private fun IntRangePickerPreview() {
         label = { it.toString() },
         value = value,
         onValueChange = { value = it },
-        list = possibleValues,
+        items = possibleValues,
         textStyle = TextStyle(Color.White)
     )
 }
